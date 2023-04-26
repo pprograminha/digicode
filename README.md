@@ -4,6 +4,10 @@
 
 **-- web**
 
+Instale as dependências:
+```zsh 
+pnpm install
+```
 Inicie o NextJS:
 ```zsh
 pnpm dev
@@ -14,7 +18,6 @@ pnpm dev
 
 **-- server**
 
-
 Copie o .env.example em .env:
 ```zsh 
 cp .env.example .env
@@ -23,7 +26,7 @@ Inicie o container Postgres:
 ```zsh 
 docker-compose up -d
 ```
-Instale dependências:
+Instale as dependências:
 ```zsh 
 pnpm install
 ```
