@@ -1,5 +1,6 @@
 import { left, right } from '../../../core/either'
 import { Entity } from '../../../core/domain/entity'
+import { HeightError } from './errors/height-error'
 
 export class Wall extends Entity {
   constructor(props) {
@@ -30,7 +31,7 @@ export class Wall extends Entity {
     })
 
     if (!validatedDoor) {
-      return left(new Error('Unable to validate door height'))
+      return left(new HeightError())
     }
 
     return right(null)
