@@ -6,7 +6,7 @@ import { makeSuggestWallPaintCanControllerFactory } from '../../factories/make-s
 const paintsRouter = express.Router()
 
 paintsRouter.post(
-  '/suggest-wall-paint-can',
+  '/suggest-wall-paint-cans',
   adaptRoute(makeSuggestWallPaintCanControllerFactory()),
 )
 

@@ -24,7 +24,7 @@ export class SuggestWallPaintCans {
         return left(doorCollectionResult.value)
       }
       if (windowCollectionResult.isLeft()) {
-        return left(doorCollectionResult.value)
+        return left(windowCollectionResult.value)
       }
 
       const doors = doorCollectionResult.value.doors
