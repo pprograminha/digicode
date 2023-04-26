@@ -1,0 +1,30 @@
+{
+
+	"prisma": {
+		"seed": "node src/infra/prisma/seed"
+	},
+	"devDependencies": {
+		"@babel/cli": "^7.21.0",
+		"@babel/core": "^7.21.4",
+		"@babel/node": "^7.20.7",
+		"@babel/plugin-proposal-class-properties": "^7.18.6",
+		"@babel/preset-env": "^7.21.4",
+		"@rocketseat/eslint-config": "^1.2.0",
+		"eslint": "^8.39.0",
+		"nodemon": "^2.0.22",
+		"prisma": "^4.13.0",
+		"vitest": "^0.30.1"
+	},
+	"scripts": {
+		"dev": "nodemon --exec babel-node --presets @babel/preset-env --ignore dist --ignore node_modules src/infra/http/express/server.js",
+		"start": "node dist/infra/http/express/server.js",
+		"build": "babel src --extensions \".js,.ts\" --out-dir dist --copy-files"
+	},
+	"dependencies": {
+		"@prisma/client": "^4.13.0",
+		"cors": "^2.8.5",
+		"dotenv": "^16.0.3",
+		"express": "^4.18.2",
+		"uuid": "^9.0.0"
+	}
+}
