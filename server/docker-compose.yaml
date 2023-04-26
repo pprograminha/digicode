@@ -1,0 +1,13 @@
+version: '3.9'
+
+services:
+  database:
+    container_name: digital_republic_postgres
+    image: 'postgres:alpine'
+    ports:
+      - '5432:5432'
+    environment:
+      - POSTGRES_USER=digital-republic
+      - POSTGRES_PASSWORD=digital-republic
+      - POSTGRES_DATABASE=digital-republic
+
