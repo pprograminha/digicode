@@ -1,4 +1,3 @@
-# DIGITAL REPUBLIC CODE CHALLENGE
 
 ## Para iniciar o projeto, execute os seguintes comandos:
 
